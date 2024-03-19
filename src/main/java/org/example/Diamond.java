@@ -29,7 +29,7 @@ public class Diamond {
         2. i = 1, letters(1) = b: Spaces at beginning: 0. Then letters(1). Spaces in between: 1 (2 * i - 1), Then letters(1).
         .. same for all the letters, except for first and last.
         3. i = 0, letters(0) = a, same reasoning.
-        We can go from letters(0) to letters(length - 1) & then print the other half except for middle part.
+        We can go from start to half & then print the other half except for middle part.
          */
 
         int lettersSize = letters.size() + 1;
