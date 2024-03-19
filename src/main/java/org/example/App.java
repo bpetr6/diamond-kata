@@ -19,7 +19,7 @@ public class App {
             if (input.matches("([a-z])|([A-Z])")) {
                 char c = input.charAt(0);
                 System.out.println("\n Generating diamond... \n");
-                System.out.println(Diamond.print(c) + "\n");
+                System.out.println(Diamond.create(c) + "\n");
             }
         }
 
