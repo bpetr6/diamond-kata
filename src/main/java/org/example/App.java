@@ -11,12 +11,12 @@ public class App {
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
-            System.out.println("Enter a character a-z/A-Z (type ':q' to quit): \n");
+            System.out.println("Enter a character A-Z (type ':q' to quit): \n");
             String input = scanner.nextLine();
             if (input.equalsIgnoreCase(":q")) {
                 break;
             }
-            if (input.matches("([a-z])|([A-Z])")) {
+            if (input.matches("[A-Z]")) {
                 char c = input.charAt(0);
                 System.out.println("\n Generating diamond... \n");
                 System.out.println(Diamond.create(c) + "\n");

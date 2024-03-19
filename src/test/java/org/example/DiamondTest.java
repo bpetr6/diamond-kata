@@ -12,13 +12,6 @@ public class DiamondTest {
        assertEquals("A\n", Diamond.create('A'));
     }
 
-
-    @Test
-    public void testReturnDiamondIgnoreCase(){
-        assertEquals("a\n", Diamond.create('a'));
-    }
-
-
     @Test
     public void testReturnBDiamond(){
         assertEquals(" A\nB B\n A\n", Diamond.create('B'));
