@@ -1,6 +1,5 @@
 package org.example;
 
-import org.junit.Ignore;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
@@ -14,12 +13,37 @@ public class DiamondTest {
 
     @Test
     public void testReturnBDiamond(){
-        assertEquals(" A\nB B\n A\n", Diamond.create('B'));
+        assertEquals("""
+                 A
+                B B
+                 A
+                """, Diamond.create('B'));
     }
 
-    @Ignore
+    @Test
     public void testReturnCDiamond(){
-        assertEquals("  A\nB B\nC C\nB B\nA\n", Diamond.create('B'));
+        assertEquals("""
+                          A
+                         B B
+                        C   C
+                         B B
+                          A
+                        """, Diamond.create('C'));
     }
 
+    @Test
+    public void testReturnEDiamond(){
+        assertEquals("""
+                         A
+                        B B
+                       C   C
+                      D     D
+                     E       E
+                      D     D
+                       C   C
+                        B B
+                         A
+                     """, Diamond.create('E'));
+
+    }
 }
