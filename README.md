@@ -31,3 +31,7 @@ It may be helpful visualise the whitespace in your rendering like this:
     C _ _ _ C
     _ B _ B _
     _ _ A _ _
+
+
+### Usage 
+`mvn clean compile exec:java` and then follow prompt.
